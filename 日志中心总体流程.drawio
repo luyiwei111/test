@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-04T08:08:15.499Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="vekm3ZZXqRl5gcQL4xO9" version="21.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-05T00:59:18.357Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="YJO4lvZxGyxUwZLv2bwu" version="21.2.3" type="github">
   <diagram name="第 1 页" id="r4s_X6cK8T2YboEJEy0d">
     <mxGraphModel dx="1593" dy="2061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -48,6 +48,33 @@
         </mxCell>
         <mxCell id="VXHBqYQp11LQdkzjxbea-19" value="日志收集、结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="660" y="860" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-22" target="VXHBqYQp11LQdkzjxbea-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-22" value="请求开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="700" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-24" target="VXHBqYQp11LQdkzjxbea-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-24" value="&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;客户端：请求头内添加UserGuid" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-26" target="VXHBqYQp11LQdkzjxbea-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-26" value="服务端：将UserGuid放入log4j的MDC内" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-28" target="VXHBqYQp11LQdkzjxbea-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-28" value="日志打印" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-29" value="日志收集、结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="840" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
