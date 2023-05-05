@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-05T00:59:18.357Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="YJO4lvZxGyxUwZLv2bwu" version="21.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-05T02:12:04.281Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="ZNLwcHrQBrAAvkBgR3w7" version="21.2.3" type="github">
   <diagram name="第 1 页" id="r4s_X6cK8T2YboEJEy0d">
     <mxGraphModel dx="1593" dy="2061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -49,32 +49,110 @@
         <mxCell id="VXHBqYQp11LQdkzjxbea-19" value="日志收集、结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="660" y="860" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="VXHBqYQp11LQdkzjxbea-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-22" target="VXHBqYQp11LQdkzjxbea-24">
+        <mxCell id="VXHBqYQp11LQdkzjxbea-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-22" target="VXHBqYQp11LQdkzjxbea-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VXHBqYQp11LQdkzjxbea-22" value="请求开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1150" y="700" width="120" height="80" as="geometry" />
+          <mxGeometry x="1812" y="440" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VXHBqYQp11LQdkzjxbea-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-24" target="VXHBqYQp11LQdkzjxbea-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VXHBqYQp11LQdkzjxbea-24" value="&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;客户端：请求头内添加UserGuid" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1150" y="850" width="120" height="60" as="geometry" />
+        <mxCell id="VXHBqYQp11LQdkzjxbea-24" value="	客户端：请求头内添加UserGuid" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1812" y="850" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="VXHBqYQp11LQdkzjxbea-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-26" target="VXHBqYQp11LQdkzjxbea-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VXHBqYQp11LQdkzjxbea-26" value="服务端：将UserGuid放入log4j的MDC内" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1150" y="990" width="120" height="60" as="geometry" />
+        <mxCell id="VXHBqYQp11LQdkzjxbea-45" value="tomcat日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VXHBqYQp11LQdkzjxbea-25">
+          <mxGeometry x="-0.3472" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-26" value="服务端：将UserGuid以及nginx生成的uuid放入log4j的MDC内" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1812" y="990" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="VXHBqYQp11LQdkzjxbea-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-28" target="VXHBqYQp11LQdkzjxbea-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VXHBqYQp11LQdkzjxbea-28" value="日志打印" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1350" y="990" width="120" height="60" as="geometry" />
+          <mxGeometry x="2068" y="990" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="VXHBqYQp11LQdkzjxbea-29" value="日志收集、结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1350" y="840" width="120" height="80" as="geometry" />
+          <mxGeometry x="2068" y="1130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-31" target="VXHBqYQp11LQdkzjxbea-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-31" target="VXHBqYQp11LQdkzjxbea-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1732" y="770" />
+              <mxPoint x="1732" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-35" value="使用uuid串联所有日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VXHBqYQp11LQdkzjxbea-34">
+          <mxGeometry x="-0.1487" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-31" target="VXHBqYQp11LQdkzjxbea-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-44" value="nginx日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VXHBqYQp11LQdkzjxbea-43">
+          <mxGeometry x="-0.4444" y="-3" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-31" value="nginx内使用模块生成uuid添加在头内" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1812" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-37" target="VXHBqYQp11LQdkzjxbea-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-40" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VXHBqYQp11LQdkzjxbea-39">
+          <mxGeometry x="-0.1444" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VXHBqYQp11LQdkzjxbea-37" target="VXHBqYQp11LQdkzjxbea-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1990" y="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1970" y="640" />
+              <mxPoint x="1970" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-42" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VXHBqYQp11LQdkzjxbea-41">
+          <mxGeometry x="-0.1052" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-37" value="请求头内是否有nginx的uuid" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1791" y="600" width="162" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-47" value="log4j日志" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#33A64C;fontColor=#FFFFFF;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=1;fontSize=14;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="1360" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-48" value="nginx日志" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#DB2843;fontColor=#FFFFFF;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=1;fontSize=14;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="1360" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-49" value="tomcat日志" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#6C767D;fontColor=#FFFFFF;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=1;fontSize=14;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1279" y="1360" width="91" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-50" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="860" y="1410" as="sourcePoint" />
+            <mxPoint x="1610" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-51" value="日志应用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=21;" vertex="1" parent="1">
+          <mxGeometry x="737" y="1347.5" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="VXHBqYQp11LQdkzjxbea-52" value="日志采集层" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=21;" vertex="1" parent="1">
+          <mxGeometry x="720.5" y="1470" width="123" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
